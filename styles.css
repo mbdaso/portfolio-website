@@ -1,0 +1,334 @@
+/*------------------------------------------------------------------
+    Main Style Stylesheet
+    Project:        www.martinbelda.dev
+    Version:        1.0
+    Author:         Martín Belda
+    Primary use:    Creative, Coporate, Business, Portfolio, Personal
+-------------------------------------------------------------------*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+	--blue: #00abf0;
+	--darkblue: #081b29;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif
+}
+
+body {
+	background: var(--darkblue);
+	color: #ededed
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 10%;
+	background-color: transparent;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	z-index: 100;
+
+}
+
+.logo {
+	position: relative;
+	font-size: 25px;
+	color: #ededed;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.logo::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: var(--darkblue);
+	animation: showRight 1s ease forwards;
+	animation-delay: .4s;
+}
+
+.navbar a {
+	font-size: 18px;
+	color: #ededed;
+	text-decoration: none;
+	font-weight: 500;
+	margin-left: 35px;
+	transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a:active {
+	color: var(--blue);
+}
+
+.home {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	padding: 0 10%;
+	background: url('home.png') no-repeat;
+	background-position-x: 95%;
+	background-position-y: center;
+	background-size: 30%
+}
+
+@media screen and (max-width: 1500px) {
+	.home {
+		background: none;
+	}
+}
+
+.home-content {
+	background: transparent;
+	max-width: 600px;
+}
+
+.home-content h1 {
+	position: relative;
+	font-size: 56px;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+.home-content h1::before{
+	content: '';
+	position: absolute;
+	top: 0; right: 0; 
+	width: 100%;
+	height: 100%;
+	background: var(--darkblue);
+	animation: showRight 1s ease forwards;
+	animation-delay: 1s;
+}
+
+.home-content h3 {
+	position: relative;
+	font-size: 32px;
+	font-weight: 700;
+	color: var(--blue);
+}
+.home-content h3::before{
+	content: '';
+	position: absolute;
+	top: 0; right: 0; 
+	width: 100%;
+	height: 100%;
+	background: var(--darkblue);
+	animation: showRight 1s ease forwards;
+	animation-delay: 1.3s;
+}
+.home-content p {
+	position:relative;
+	font-size: 16px;
+	margin: 20px 0 40px;
+}
+
+.home-content p::before{
+	content: '';
+	position: absolute;
+	top: 0; right: 0; 
+	width: 100%;
+	height: 100%;
+	background: var(--darkblue);
+	animation: showRight 1s ease forwards;
+	animation-delay: 1.6s;
+}
+
+.home-content .btn-box {
+	position:relative;
+	display: flex;
+	justify-content: space-between;
+	width: 345px;
+	height: 50px;
+}
+
+.home-content .btn-box::before{
+	content: '';
+	position: absolute;
+	top: 0; right: 0; 
+	width: 100%;
+	height: 100%;
+	background: var(--darkblue);
+	animation: showRight 1s ease forwards;
+	animation-delay: 1.9s;
+	z-index: 2;
+}
+
+.btn-box a {
+	position: relative;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 150px;
+	height: 100%;
+	background: var(--blue);
+	border: 2px solid var(--blue);
+	border-radius: 8px;
+	font-size: 19px;
+	color: var(--darkblue);
+	text-decoration: none;
+	font-weight: 600;
+	letter-spacing: 1px;
+	z-index: 1;
+	overflow: hidden;
+	transition: 0.5s;
+}
+
+.btn-box a:hover {
+	color: var(--blue);
+}
+
+.btn-box a:nth-child(2) {
+	background: transparent;
+	color: var(--blue);
+}
+
+.btn-box a:nth-child(2):hover {
+	color: var(--darkblue)
+}
+
+.btn-box a:nth-child(2)::before {
+	background: var(--blue)
+}
+
+.btn-box a::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0%;
+	height: 100%;
+	background-color: var(--darkblue);
+	z-index: -1;
+	transition: 0.25s
+}
+
+.btn-box a:hover::before {
+	width: 100%;
+	transition: 0.75s ease-out;
+}
+
+.home-image img {
+	-webkit-mask-image: linear-gradient(to right, transparent 0%, var(--darkblue) 25%, var(--darkblue) 50%, transparent 100%);
+	mask-image: linear-gradient(to right, transparent 0%, var(--darkblue) 20%, var(--darkblue) 50%, transparent 100%);
+}
+
+
+.home-sci {
+	position: absolute;
+	bottom: 40px;
+	width: 107px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.home-sci::before{
+	content: '';
+	position: absolute;
+	top: 0; right: 0; 
+	width: 100%;
+	height: 100%;
+	background: var(--darkblue);
+	animation: showRight 1s ease forwards;
+	animation-delay: 2.2s;
+	z-index: 2;
+}
+
+.home-sci a {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background: transparent;
+	width: 40px;
+	height: 40px;
+	border: 2px solid var(--blue);
+	border-radius: 50%;
+	font-size: 20px;
+	color: var(--blue);
+	text-decoration: none;
+	z-index: 1;
+	overflow: hidden;
+}
+
+.home-sci a:hover {
+	color: var(--darkblue);
+	border-color: var(--darkblue);
+}
+
+.home-sci a::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0%;
+	height: 100%;
+	background: var(--blue);
+	z-index: -1;
+	transition: .25s ease-in
+}
+
+.home-sci a:hover::before {
+	width: 100%;
+	/* border-radius: 50%; */
+}
+
+.home-imgHover {
+	position: absolute;
+	top: 0;
+	right: 30px;
+	width: 700px;
+	height: 100%;
+	background: transparent;
+	transition: 3s;
+	animation: manipActiveHover .1s forwards;
+	animation-delay: 4s;
+	pointer-events: none;
+}
+
+.home-imgHover:hover {
+	background: var(--darkblue);
+	opacity: .8;
+
+}
+
+
+
+.home-imgHover::before{
+	content: '';
+	position: absolute;
+	top: 0; right: 0; 
+	width: 100%;
+	height: 100%;
+	background: var(--darkblue);
+	animation: showRight 1s ease forwards;
+	animation-delay: 3s;
+	z-index: 100;
+}
+
+/* KEYFRAMES ANIMATION  */
+@keyframes showRight{
+	100%{
+		width: 0;
+
+	}
+}
+
+@keyframes manipActiveHover{
+	100%{
+		pointer-events: auto;
+	}
+}
