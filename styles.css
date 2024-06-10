@@ -22,7 +22,7 @@
 }
 
 body {
-	background: var(--darkblue);
+	background: linear-gradient(-45deg, black, #081b29, #007cf0, #1e8fa3);	
 	color: #ededed
 }
 
@@ -48,7 +48,7 @@ body {
 	font-weight: 600;
 }
 
-.logo::before{
+/* .logo::before {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -58,7 +58,7 @@ body {
 	background: var(--darkblue);
 	animation: showRight 1s ease forwards;
 	animation-delay: .4s;
-}
+} */
 
 .navbar a {
 	font-size: 18px;
@@ -79,10 +79,11 @@ body {
 	display: flex;
 	align-items: center;
 	padding: 0 10%;
-	background: url('home.png') no-repeat;
+	background: url('yo.jpeg') no-repeat;
 	background-position-x: 95%;
 	background-position-y: center;
-	background-size: 30%
+	background-size: 30%;
+
 }
 
 @media screen and (max-width: 1500px) {
@@ -103,16 +104,17 @@ body {
 	line-height: 1.2;
 }
 
-.home-content h1::before{
+/* .home-content h1::before {
 	content: '';
 	position: absolute;
-	top: 0; right: 0; 
+	top: 0;
+	right: 0;
 	width: 100%;
 	height: 100%;
 	background: var(--darkblue);
 	animation: showRight 1s ease forwards;
 	animation-delay: 1s;
-}
+} */
 
 .home-content h3 {
 	position: relative;
@@ -120,52 +122,57 @@ body {
 	font-weight: 700;
 	color: var(--blue);
 }
-.home-content h3::before{
+
+/* .home-content h3::before {
 	content: '';
 	position: absolute;
-	top: 0; right: 0; 
+	top: 0;
+	right: 0;
 	width: 100%;
 	height: 100%;
 	background: var(--darkblue);
 	animation: showRight 1s ease forwards;
 	animation-delay: 1.3s;
-}
+} */
+
 .home-content p {
-	position:relative;
+	position: relative;
 	font-size: 16px;
 	margin: 20px 0 40px;
 }
 
-.home-content p::before{
+/* .home-content p::before {
 	content: '';
 	position: absolute;
-	top: 0; right: 0; 
+	top: 0;
+	right: 0;
 	width: 100%;
 	height: 100%;
 	background: var(--darkblue);
 	animation: showRight 1s ease forwards;
 	animation-delay: 1.6s;
-}
+} */
 
 .home-content .btn-box {
-	position:relative;
+	position: relative;
 	display: flex;
 	justify-content: space-between;
 	width: 345px;
 	height: 50px;
 }
 
-.home-content .btn-box::before{
+/* .home-content .btn-box::before {
 	content: '';
 	position: absolute;
-	top: 0; right: 0; 
+	top: 0;
+	right: 0;
 	width: 100%;
 	height: 100%;
 	background: var(--darkblue);
 	animation: showRight 1s ease forwards;
 	animation-delay: 1.9s;
 	z-index: 2;
-}
+} */
 
 .btn-box a {
 	position: relative;
@@ -204,7 +211,7 @@ body {
 	background: var(--blue)
 }
 
-.btn-box a::before {
+/* .btn-box a::before {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -214,18 +221,12 @@ body {
 	background-color: var(--darkblue);
 	z-index: -1;
 	transition: 0.25s
-}
+} */
 
-.btn-box a:hover::before {
+/* .btn-box a:hover::before {
 	width: 100%;
 	transition: 0.75s ease-out;
-}
-
-.home-image img {
-	-webkit-mask-image: linear-gradient(to right, transparent 0%, var(--darkblue) 25%, var(--darkblue) 50%, transparent 100%);
-	mask-image: linear-gradient(to right, transparent 0%, var(--darkblue) 20%, var(--darkblue) 50%, transparent 100%);
-}
-
+} */
 
 .home-sci {
 	position: absolute;
@@ -235,17 +236,18 @@ body {
 	justify-content: space-between;
 }
 
-.home-sci::before{
+/* .home-sci::before {
 	content: '';
 	position: absolute;
-	top: 0; right: 0; 
+	top: 0;
+	right: 0;
 	width: 100%;
 	height: 100%;
 	background: var(--darkblue);
 	animation: showRight 1s ease forwards;
 	animation-delay: 2.2s;
 	z-index: 2;
-}
+} */
 
 .home-sci a {
 	position: relative;
@@ -292,25 +294,27 @@ body {
 	right: 30px;
 	width: 700px;
 	height: 100%;
-	background: transparent;
-	transition: 3s;
+	background: var(--darkblue);
+	transition: 0.5s;
 	animation: manipActiveHover .1s forwards;
-	animation-delay: 4s;
+	animation-delay: 6s;
 	pointer-events: none;
+	mask-image: linear-gradient(transparent 40%, var(--darkblue));
 }
 
 .home-imgHover:hover {
 	background: var(--darkblue);
 	opacity: .8;
-
+	mask-image: none;
 }
 
 
 
-.home-imgHover::before{
+.home-imgHover::before {
 	content: '';
 	position: absolute;
-	top: 0; right: 0; 
+	top: 0;
+	right: 0;
 	width: 100%;
 	height: 100%;
 	background: var(--darkblue);
@@ -320,15 +324,15 @@ body {
 }
 
 /* KEYFRAMES ANIMATION  */
-@keyframes showRight{
-	100%{
+@keyframes showRight {
+	100% {
 		width: 0;
 
 	}
 }
 
-@keyframes manipActiveHover{
-	100%{
+@keyframes manipActiveHover {
+	100% {
 		pointer-events: auto;
 	}
 }
