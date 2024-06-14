@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
+}
+body{
+    background: grey;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.header{
+    position:relative;
+    background: #333333;    
+    font-family: Poppins;    
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.page  {
+    background-color: lime;
+    /* margin-top: 10px;     */
+    background: white;
+    width: 210mm;
+    height: 297mm;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.summary{
+    justify-content: space-between;
+    display: grid;
+}
+/* .summary h3{
+    display: inline;
+} */
+.summary .yo{
+    display: inline;
+    border-radius: 10%;
+    height: 45mm;
+    width: 45mm;
+}
+.summary .contact{
+    background-color: lime;
+}
+
+h1 {
+    color: #3A9C9C;
+    font-family: Cambria, serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 50pt;
+}
+
+h3 {
+    color: #3A9C9C;
+    font-family: Cambria, serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 12pt;
+}
+
+.a,
+a {
+    color: black;
+    font-family: Consolas, monospace;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 10pt;
+}
+
+.s1 {
+    color: black;
+    font-family: Consolas, monospace;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 10pt;
+}
+
+.p,
+p {
+    color: #1D1D1D;
+    font-family: Consolas, monospace;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 10pt;
+    margin: 0pt;
+}
+
+h2 {
+    color: #3A9C9C;
+    font-family: Cambria, serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 30pt;
+}
+
+h4 {
+    color: black;
+    font-family: Cambria, serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 10pt;
+}
+
+.s3 {
+    color: black;
+    font-family: "Segoe UI Emoji", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 8pt;
+}
+
+.s4 {
+    color: #1D1D1D;
+    font-family: Consolas, monospace;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 10pt;
+}
+
+.s5 {
+    color: #1D1D1D;
+    font-family: "Segoe UI Symbol", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 10pt;
+}
+
+.s6 {
+    color: #1D1D1D;
+    font-family: Consolas, monospace;
+    font-style: italic;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 10pt;
+}
+
+.s7 {
+    color: #1D1D1D;
+    font-family: Consolas, monospace;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 10pt;
+}
+
+.s8 {
+    color: #1D1D1D;
+    font-family: Consolas, monospace;
+    font-style: italic;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 10pt;
+}
+
+li {
+    display: block;
+}
+
+#l1 {
+    padding-left: 0pt;
+}
+
+#l1>li>*:first-child:before {
+    content: "• ";
+    color: black;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+table,
+tbody {
+    vertical-align: top;
+    overflow: visible;
+}
