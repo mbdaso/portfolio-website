@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header no-print">
         <a href="/" class="logo">Martín</a>
         <nav class="navbar">
             <a href="/">Home</a>
@@ -22,17 +22,19 @@
     <div class="page">
         <h1>Martín Belda Sosa</h1>
 
-        <hr style="  border-top: 3px solid black;" />
+        <hr />
 
         <section class="summary">
             <img class="yo" src="../images/yo.jpeg" />
-            <div class="contact">
-                <h3>E-mail<span class="s1">: mbelda789@gmail.com</span></h3>
-                <h3>Linkedin<span class="s1">: https://www.linkedin.com/in/martin-belda-sosa/</span></h3>
-                <h3>Phone number<span class="s1">: https://www.linkedin.com/in/martin-belda-sosa/</span></h3>
-                <h3>Website<span class="s1">: https://www.linkedin.com/in/martin-belda-sosa/</span></h3>
-                <h3>Github<span class="s1">: https://www.linkedin.com/in/martin-belda-sosa/</span></h3>
-            </div>
+            <nav class="contact">
+                <nav class="contact">
+                    <h3>E-mail: <a class="s1" href="mailto:mbelda789@gmail.com">mbelda789@gmail.com</a></h3>
+                    <h3>LinkedIn: <a class="s1" href="https://www.linkedin.com/in/martin-belda-sosa/" target="_blank">https://www.linkedin.com/in/martin-belda-sosa/</a></h3>
+                    <h3>Website: <a class="s1" href="https://www.martinbelda.dev" target="_blank">https://www.martinbelda.dev</a></h3>
+                    <h3>GitHub: <a class="s1" href="https://www.github.com/mbdaso" target="_blank">https://www.github.com/mbdaso</a></h3>
+                </nav>
+                
+            </nav>
             <div class="description">
                 <p>Experienced software engineer
                     specializing in delivering scalable and robust applications using modern development practices.
@@ -44,250 +46,132 @@
             </div>
         </section>
         <section class="experience">
-            <h2><a name="bookmark4"></a>Work experience</h2>
-            <h4><a name="bookmark5"></a>02/2023 – PRESENT | SOFTWARE ENGINEER | <span>LENDSUM
-                </span><span class="s3">📍</span>MADRID</h4>
-
-            <p>Developing a supplier
-                payment financing platform using ASP.NET, Blazor Server, .NET Core, Auth0, Azure Functions,
-                Azure Blob
-                Storage, Azure Message Queues, Azure SQL Server, Azure DevOps CI/CD, Docker and other
-                related
-                technologies.</p>
-
-            <p>System design: using
-                Event Sourcing, Domain-Driven Design (DDD), SOLID principles, MVVM, and Clean Architecture.
-            </p>
-
-            <p>Testing: Utilizing unit
-                testing, integrated testing, and Test-Driven Development (TDD).</p>
-
-            <p>Development: Working
-                with multiple developers using Scrum, Azure Boards, and Azure Repos to organize and manage
-                work.
-                Participant in meetings with stakeholders to provide estimations and evaluate the impact of
-                new
-                features.</p>
-            <h4><a name="bookmark6"></a>10/2021 – 02/2023 | SOFTWARE ENGINEER | <span>EXPLEO GROUP
-                </span><span class="s3">📍</span>MADRID</h4>
-
-            <p>Distributed application
-                in Python to automate railway testing tasks in a multi virtual machine environment.</p>
-
-            <p>C/C++ development
-                project under SIL-4 requirements, EN-50128 and UNISIG Subsets 037, 098, 114 and 137 for
-                safety
-                RBC or
-                ETCS-board devices communcations. Worked with Docker for Windows and Linux deployments.</p>
-            <h4><a name="bookmark7"></a>02/2020 – 10/2021 | SOFTWARE ENGINEER | <span>INETUM </span><span
-                    class="s3">📍</span>MADRID</h4>
-
-            <p>Desktop application
-                development in C# with the .NET technology stack. Some of the tecnologies I’m currently
-                using
-                are SQL
-                Server, RabbitMQ, GRPC Services, Telerik UI and FLIR Nexus Server. The development pipeline
-                is
-                built
-                with Bitbucket, JIRA, Nexus Sonatype and Jenkins.</p>
-            <h4><a name="bookmark8"></a>02/2019 – 06/2019 | TECHNICAL SUPPORT INTERN | <span>UNIVERSITY OF
-                    LA
-                    LAGUNA </span><span class="s3">📍 </span>TENERIFE</h4>
-
-            <p>IT support for users of
-                the university’s Infrastructure as a Service (IaaS) platform.</p>
-
-            <p>Python scripts
-                development to automate maintenance and status check tasks with oVirt SDK.</p>
-        </section>
+            <h2>Work experience</h2>
+            <ul>
+                <li>
+                    <article>
+                        <header>
+                            <h4>02/2023 – PRESENT | SOFTWARE ENGINEER | <span>LENDSUM</span><span class="s3">📍MADRID</span></h4>
+                        </header>
+                        <footer>
+                            <p>Developing a supplier payment financing platform using ASP.NET, Blazor Server, .NET Core, Auth0, Azure Functions, Azure Blob Storage, Azure Message Queues, Azure SQL Server, Azure DevOps CI/CD, Docker and other related technologies.</p>
+                            <p>System design: using Event Sourcing, Domain-Driven Design (DDD), SOLID principles, MVVM, and Clean Architecture.</p>
+                            <p>Testing: Utilizing unit testing, integrated testing, and Test-Driven Development (TDD).</p>
+                            <p>Development: Working with multiple developers using Scrum, Azure Boards, and Azure Repos to organize and manage work. Participant in meetings with stakeholders to provide estimations and evaluate the impact of new features.</p>
+                        </footer>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <header>
+                            <h4>10/2021 – 02/2023 | SOFTWARE ENGINEER | <span>EXPLEO GROUP</span><span class="s3">📍MADRID</span></h4>
+                        </header>
+                        <footer>
+                            <p>Distributed application in Python to automate railway testing tasks in a multi virtual machine environment.</p>
+                            <p>C/C++ development project under SIL-4 requirements, EN-50128 and UNISIG Subsets 037, 098, 114 and 137 for safety RBC or ETCS-board devices communications. Worked with Docker for Windows and Linux deployments.</p>
+                        </footer>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <header>
+                            <h4>02/2020 – 10/2021 | SOFTWARE ENGINEER | <span>INETUM</span><span class="s3">📍MADRID</span></h4>
+                        </header>
+                        <footer>
+                            <p>Desktop application development in C# with the .NET technology stack. Some of the technologies I’m currently using are SQL Server, RabbitMQ, GRPC Services, Telerik UI and FLIR Nexus Server. The development pipeline is built with Bitbucket, JIRA, Nexus Sonatype and Jenkins.</p>
+                        </footer>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <header>
+                            <h4>02/2019 – 06/2019 | TECHNICAL SUPPORT INTERN | <span>UNIVERSITY OF LA LAGUNA</span><span class="s3">📍TENERIFE</span></h4>
+                        </header>
+                        <footer>
+                            <p>IT support for users of the university’s Infrastructure as a Service (IaaS) platform.</p>
+                            <p>Python scripts development to automate maintenance and status check tasks with oVirt SDK.</p>
+                        </footer>
+                    </article>
+                </li>
+            </ul>
+        </section>        
     </div>
     <div class="page">
-        <h2><a name="bookmark9"></a>Education</h2>
-        <h4><a name="bookmark10"></a>09/2019 – 03/2021 | M. SC. INTERNET OF THINGS | <span>POLYTHECNIC UNIVERSITY
-                MADRID </span><span class="s3">📍</span>MADRID</h4>
-
-        <li data-list-text="•">
-            <p>Learned to work with
-                physical sensors and actuators, as well as implementing communication between them and operating
-                with
-                data in the cloud and mobile devices.</p>
-
-        <li data-list-text="•">
-            <p class="s4">Final master
-                thesis<span class="p">: “Serverless workflows for orchestration”. An intelligent plant monitoring
-                    system
-                    developed with AWS services that are relevant for the IoT field.</span></p>
-            <h4><a name="bookmark11"></a>09/2013 – 09/2019 | COMPUTER SCIENCE DEGREE | <span>UNIVERSITY OF LA LAGUNA
-                </span><span class="s3">📍</span>TENERIFE</h4>
-
-        <li data-list-text="•">
-            <p class="s4">
-                Specialization<span class="p">: Computer Engineering</span></p>
-
-        <li data-list-text="•">
-            <p class="s4">Learned the
-                main concepts of computing theory<span class="p">: computational complexity, data structures, formal
-                    methods, algorithms, computer architechture, operating systems, compilers, parallel programming,
-                    robotics, computer vision and cybersecurity among others.</span></p>
-
-        <li data-list-text="•">
-            <p class="s4">Final degree
-                work<span class="p">: Python client-server application to deploy a slack bot that forges digital
-                    badges.</span></p>
-            <p><br /></p>
-            <h2><a name="bookmark12"></a>Courses and
-                certifications</h2>
-            <p><br /></p>
-            <table cellspacing="0">
-                <tr>
-                    <td>
-                        <p class="s5">
-                            •</p>
-                    </td>
-                    <td>
-                        <p><a href="https://www.kaggle.com/learn/certification/martnbelda/data-visualization"
-                                class="s6">Data Cleaning</a></p>
-                    </td>
-                    <td>
-                        <p class="s7">(Kaggle, oct. 2022)
-                        </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p class="s5">•</p>
-                    </td>
-                    <td>
-                        <p><a href="https://www.kaggle.com/learn/certification/martnbelda/data-visualization"
-                                class="s6">Data Visualization</a></p>
-                    </td>
-                    <td>
-                        <p class="s7">(Kaggle, oct. 2022)
-                        </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p class="s5">•
-                        </p>
-                    </td>
-                    <td>
-                        <p><a href="https://www.kaggle.com/learn/certification/martnbelda/intermediate-machine-learning"
-                                class="s6">Intermediate Machine Learning</a></p>
-                    </td>
-                    <td>
-                        <p class="s7">
-                            (Kaggle, oct. 2022)</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p class="s5">•
-                        </p>
-                    </td>
-                    <td>
-                        <p><a href="https://www.kaggle.com/learn/certification/martnbelda/machine-learning-explainability"
-                                class="s6">Machine Learning Explainability</a></p>
-                    </td>
-                    <td>
-                        <p class="s7">
-                            (Kaggle, oct. 2022)</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p class="s5">•
-                        </p>
-                    </td>
-                    <td>
-                        <p><a href="https://www.kaggle.com/learn/certification/martnbelda/pandas" class="s6">Pandas</a>
-                        </p>
-                    </td>
-                    <td>
-                        <p class="s7">
-                            (Kaggle, oct. 2022)</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p class="s5">•
-                        </p>
-                    </td>
-                    <td>
-                        <p><a href="https://www.kaggle.com/learn/certification/martnbelda/intro-to-machine-learning"
-                                class="s6">Intro to Machine Learning</a></p>
-                    </td>
-                    <td>
-                        <p class="s7">
-                            (Kaggle, sept. 2022)</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p class="s5">•
-                        </p>
-                    </td>
-                    <td>
-                        <p class="s8">
-                            Certificados Digitales y PKIs</p>
-                    </td>
-                    <td>
-                        <p class="s7">
-                            (L&amp;M Data Communications, may 2022)</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p class="s5">•
-                        </p>
-                    </td>
-                    <td>
-                        <p><a href="https://www.udemy.com/certificate/UC-ebd5cbcf-af81-4904-aa03-dded2f69ff76/"
-                                class="s6">Learn and Understand NodeJS</a></p>
-                    </td>
-                    <td>
-                        <p class="s7">
-                            (Udemy, jul. 2021)</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p class="s5">
-                            •</p>
-                    </td>
-                    <td>
-                        <p><a href="https://www.hackerrank.com/certificates/503225d581ec" class="s6">C# (Basic)
-                                Certificate</a></p>
-                    </td>
-                    <td>
-                        <p class="s7">
-                            (HackerRank, jun. 2021)</p>
-                    </td>
-                </tr>
-            </table>
-            <h2><a name="bookmark13"></a>Skills</h2>
-
-        <li data-list-text="•">
-            <p class="s4">
-                Languages<span class="p">: Spanish (Native), English (Good), German (Reading)</span></p>
-
-        <li data-list-text="•">
-            <p class="s4">Programming
-                languages<span class="p">: C/C++, Python, Javascript, C#, Java , SQL, Powershell scripting, Linux
-                    shell
-                    scripting</span></p>
-
-        <li data-list-text="•">
-            <p class="s4">Technologies
-                and frameworks<span class="p">: MudBlazor, Blazor Server, .NET Core, Azure Functions, Azure Dev Ops
-                    CI/CD, SQL Server, Docker, Embedded C/C++ (Arduino, Mbed-OS, FreeRTOS), CUDA Programming,
-                    Computer
-                    Architecture, GRPC, RabbitMQ, TDD (NUnit/MSTest), SQL Server, MVVM, DDD, AWS, Internet of Things
-                    (IoT), Linux OS, Docker, Windows OS, Git, Object Oriented Programmin, Software
-                    Architecture.</span>
-            </p>
-
+        <section class="education">
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <article>
+                        <header>
+                            <h4>09/2019 – 03/2021 | M. SC. INTERNET OF THINGS | POLYTHECNIC UNIVERSITY MADRID <span class="s3">📍MADRID</span></h4>
+                        </header>
+                        <footer>
+                            <p>Learned to work with physical sensors and actuators, as well as implementing communication between them and operating with data in the cloud and mobile devices.</p>
+                            <p>Final master thesis: “Serverless workflows for orchestration”. An intelligent plant monitoring system developed with AWS services that are relevant for the IoT field.</p>
+                        </footer>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <header>
+                            <h4>09/2013 – 09/2019 | COMPUTER SCIENCE DEGREE | UNIVERSITY OF LA LAGUNA <span class="s3">📍TENERIFE</span></h4>
+                        </header>
+                        <footer>
+                            <p><strong>Specialization:</strong> Computer Engineering</p>
+                            <p>Learned the main concepts of computing theory: computational complexity, data structures, formal methods, algorithms, computer architecture, operating systems, compilers, parallel programming, robotics, computer vision, and cybersecurity among others.</p>
+                            <p><strong>Final degree work:</strong> Python client-server application to deploy a slack bot that forges digital badges.</p>
+                        </footer>
+                    </article>
+                </li>
             </ul>
+        </section>
+        <section class="courses-certifications">
+            <h2>Courses and Certifications</h2>
+            <ul>
+                <li>
+                    <p><a href="https://www.kaggle.com/learn/certification/martnbelda/data-visualization">Data Cleaning</a> <span style="float: right;">(Kaggle, Oct. 2022)</span></p>
+                </li>
+                <li>
+                    <p><a href="https://www.kaggle.com/learn/certification/martnbelda/data-visualization">Data Visualization</a> <span style="float: right;">(Kaggle, Oct. 2022)</span></p>
+                </li>
+                <li>
+                    <p><a href="https://www.kaggle.com/learn/certification/martnbelda/intermediate-machine-learning">Intermediate Machine Learning</a> <span style="float: right;">(Kaggle, Oct. 2022)</span></p>
+                </li>
+                <li>
+                    <p><a href="https://www.kaggle.com/learn/certification/martnbelda/machine-learning-explainability">Machine Learning Explainability</a> <span style="float: right;">(Kaggle, Oct. 2022)</span></p>
+                </li>
+                <li>
+                    <p><a href="https://www.kaggle.com/learn/certification/martnbelda/pandas">Pandas</a> <span style="float: right;">(Kaggle, Oct. 2022)</span></p>
+                </li>
+                <li>
+                    <p><a href="https://www.kaggle.com/learn/certification/martnbelda/intro-to-machine-learning">Intro to Machine Learning</a> <span style="float: right;">(Kaggle, Sept. 2022)</span></p>
+                </li>
+                <li>
+                    <p>Certificados Digitales y PKIs <span style="float: right;">(L&amp;M Data Communications, May 2022)</span></p>
+                </li>
+                <li>
+                    <p><a href="https://www.udemy.com/certificate/UC-ebd5cbcf-af81-4904-aa03-dded2f69ff76/">Learn and Understand NodeJS</a> <span style="float: right;">(Udemy, Jul. 2021)</span></p>
+                </li>
+                <li>
+                    <p><a href="https://www.hackerrank.com/certificates/503225d581ec">C# (Basic) Certificate</a> <span style="float: right;">(HackerRank, Jun. 2021)</span></p>
+                </li>
+            </ul>
+        </section>
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>
+                    <p>Languages: Spanish (Native), English (Good), German (Reading)</p>
+                </li>
+                <li>
+                    <p>Programming languages: C/C++, Python, Javascript, C#, Java, SQL, Powershell scripting, Linux shell scripting</p>
+                </li>
+                <li>
+                    <p>Technologies and frameworks: MudBlazor, Blazor Server, .NET Core, Azure Functions, Azure DevOps CI/CD, SQL Server, Docker, Embedded C/C++ (Arduino, Mbed-OS, FreeRTOS), CUDA Programming, Computer Architecture, GRPC, RabbitMQ, TDD (NUnit/MSTest), SQL Server, MVVM, DDD, AWS, Internet of Things (IoT), Linux OS, Docker, Windows OS, Git, Object Oriented Programming, Software Architecture.</p>
+                </li>
+            </ul>
+        </section>
+        
     </div>
 </body>
 
