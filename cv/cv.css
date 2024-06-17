@@ -1,15 +1,11 @@
 :root{
     --black: #020202;
-    --marine-dark: #024730;
-    --marine: #009c69;
-    --marine-light: #00d499;
-    --marine-white: #86ffdd;
+    --marine-dark:#003747;
+    --marine: #13485c;
+    --marine-light: 	#007081;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    text-indent: 0;
     box-sizing: border-box;
 }
 body{
@@ -17,48 +13,79 @@ body{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    align-items: center;               
+    align-items: center;
+    padding: 10px;    
 }
-h1{
-    font-size: 2.5rem;
-}
+
 hr{
-    border-top: 3px solid var(--black); 
+    border-top: 3px solid var(--marine-dark); 
 }
-.header{ /* top appbar */
-    position:relative;
-    background: var(--marine-dark);    
-    font-family: Poppins;    
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
+
 .page  {
     box-sizing: border-box;
     background: white;
     width: 210mm;
     height: 297mm;    
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    padding: 10px 20px;
+    padding: 30px 40px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    color: black;
+    color: var(--black);
+    font-size: 0.9rem;
 }
-.page h1, h2, h3, h4{
+h1{
+    font-size: 3.5rem;
+    color: var(--marine-dark);
+}
+h2{
+    color: var(--marine)
+}
+h3{
     color: var(--marine);
 }
 
-strong{
+.contact h3{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+h4{
+    color: var(--marine-dark);
+}
+h4 span{
     color: var(--marine-light);
+}
+
+.skills li{
+    margin:0px 0px;
+    text-decoration: dotted;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: var(--marine-light)
+}
+a:hover{
+    color: var(--marine)
+}
+strong{
+    color: var(--marine);
 }
 h4 .s3{
     float: right;
+    color: var(--marine-dark);
 }
 section{
     display: flex;
     flex-direction: column;
 }
+.courses-certifications, .skills{
+    gap: 10px
+}
 section li{
-    margin-top: 20px;
+    margin-top: 10px;
     list-style-type: none;
 }
 
@@ -105,6 +132,8 @@ section li{
         display:none;
     }
     body{
-        gap: 0px
+        margin: 0;
+        padding: 0px;
+        gap: 0px;
     }
 }
